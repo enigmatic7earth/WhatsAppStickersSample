@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F327355E2213EF760037918E /* StickerPackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F327355C2213EF760037918E /* StickerPackTableViewCell.swift */; };
+		F327355F2213EF760037918E /* StickerPackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F327355D2213EF760037918E /* StickerPackTableViewCell.xib */; };
+		F32735612213F44B0037918E /* StickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32735602213F44A0037918E /* StickerCell.swift */; };
+		F32735632213F7220037918E /* UIAlertController+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32735622213F7220037918E /* UIAlertController+Additions.swift */; };
+		F3D918A22212EBB000C74611 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D918A12212EBB000C74611 /* AppDelegate.swift */; };
+		F3D918A42212EBB000C74611 /* StickerPacksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D918A32212EBB000C74611 /* StickerPacksViewController.swift */; };
+		F3D918A72212EBB000C74611 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D918A52212EBB000C74611 /* Main.storyboard */; };
+		F3D918A92212EBB700C74611 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D918A82212EBB700C74611 /* Assets.xcassets */; };
+		F3D918AC2212EBB700C74611 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D918AA2212EBB700C74611 /* LaunchScreen.storyboard */; };
+		F3D918D32212EF6500C74611 /* YYFrameImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D918CA2212EF6500C74611 /* YYFrameImage.m */; };
+		F3D918D42212EF6500C74611 /* YYImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D918CD2212EF6500C74611 /* YYImage.m */; };
+		F3D918D52212EF6500C74611 /* YYSpriteSheetImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D918CE2212EF6500C74611 /* YYSpriteSheetImage.m */; };
+		F3D918D62212EF6500C74611 /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D918CF2212EF6500C74611 /* YYAnimatedImageView.m */; };
+		F3D918D72212EF6500C74611 /* YYImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D918D12212EF6500C74611 /* YYImageCoder.m */; };
+		F3D91A182212F4B500C74611 /* sticker_packs.wasticker in Resources */ = {isa = PBXBuildFile; fileRef = F3D91A172212F4B500C74611 /* sticker_packs.wasticker */; };
+		F3D91A202212FC0D00C74611 /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D91A192212FC0C00C74611 /* Sticker.swift */; };
+		F3D91A212212FC0D00C74611 /* StickerPack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D91A1A2212FC0C00C74611 /* StickerPack.swift */; };
+		F3D91A222212FC0D00C74611 /* WebPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D91A1B2212FC0C00C74611 /* WebPManager.swift */; };
+		F3D91A232212FC0D00C74611 /* Interoperability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D91A1C2212FC0C00C74611 /* Interoperability.swift */; };
+		F3D91A242212FC0D00C74611 /* StickerPackManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D91A1D2212FC0C00C74611 /* StickerPackManager.swift */; };
+		F3D91A252212FC0D00C74611 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D91A1E2212FC0C00C74611 /* ImageData.swift */; };
+		F3D91A262212FC0D00C74611 /* Limits.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D91A1F2212FC0C00C74611 /* Limits.swift */; };
+		F3FF293922141D9C00B6FB2D /* Sticker5.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF292222141D9B00B6FB2D /* Sticker5.png */; };
+		F3FF293A22141D9C00B6FB2D /* Sticker7.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF292322141D9B00B6FB2D /* Sticker7.png */; };
+		F3FF293B22141D9C00B6FB2D /* 005.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF292422141D9B00B6FB2D /* 005.png */; };
+		F3FF293C22141D9C00B6FB2D /* Sticker8.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF292522141D9B00B6FB2D /* Sticker8.png */; };
+		F3FF293D22141D9C00B6FB2D /* 010.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF292622141D9B00B6FB2D /* 010.png */; };
+		F3FF293E22141D9C00B6FB2D /* 007.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF292722141D9B00B6FB2D /* 007.png */; };
+		F3FF293F22141D9C00B6FB2D /* 006.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF292822141D9B00B6FB2D /* 006.png */; };
+		F3FF294022141D9C00B6FB2D /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF292922141D9B00B6FB2D /* logo2.png */; };
+		F3FF294122141D9C00B6FB2D /* 002.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF292A22141D9B00B6FB2D /* 002.png */; };
+		F3FF294222141D9C00B6FB2D /* Sticker3.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF292B22141D9B00B6FB2D /* Sticker3.png */; };
+		F3FF294322141D9C00B6FB2D /* 008.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF292C22141D9B00B6FB2D /* 008.png */; };
+		F3FF294422141D9C00B6FB2D /* 011.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF292D22141D9B00B6FB2D /* 011.png */; };
+		F3FF294522141D9C00B6FB2D /* 004.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF292E22141D9B00B6FB2D /* 004.png */; };
+		F3FF294622141D9C00B6FB2D /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF292F22141D9B00B6FB2D /* logo.png */; };
+		F3FF294722141D9C00B6FB2D /* 001.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF293022141D9B00B6FB2D /* 001.png */; };
+		F3FF294822141D9C00B6FB2D /* 009.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF293122141D9B00B6FB2D /* 009.png */; };
+		F3FF294922141D9C00B6FB2D /* Sticker1.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF293222141D9C00B6FB2D /* Sticker1.png */; };
+		F3FF294A22141D9C00B6FB2D /* Sticker2.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF293322141D9C00B6FB2D /* Sticker2.png */; };
+		F3FF294B22141D9C00B6FB2D /* 013.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF293422141D9C00B6FB2D /* 013.png */; };
+		F3FF294C22141D9C00B6FB2D /* Sticker4.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF293522141D9C00B6FB2D /* Sticker4.png */; };
+		F3FF294D22141D9C00B6FB2D /* Sticker6.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF293622141D9C00B6FB2D /* Sticker6.png */; };
+		F3FF294E22141D9C00B6FB2D /* 003.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF293722141D9C00B6FB2D /* 003.png */; };
+		F3FF294F22141D9C00B6FB2D /* 012.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF293822141D9C00B6FB2D /* 012.png */; };
+		F3FF2952221432AD00B6FB2D /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FF2951221432AD00B6FB2D /* WebP.framework */; };
+		F3FF297B22143ADD00B6FB2D /* 012-tickets.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF295322143ADB00B6FB2D /* 012-tickets.png */; };
+		F3FF297D22143ADD00B6FB2D /* 022-bouquet.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF295522143ADB00B6FB2D /* 022-bouquet.png */; };
+		F3FF297E22143ADD00B6FB2D /* 025-book.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF295622143ADB00B6FB2D /* 025-book.png */; };
+		F3FF297F22143ADD00B6FB2D /* 008-valentines-day.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF295722143ADB00B6FB2D /* 008-valentines-day.png */; };
+		F3FF298022143ADD00B6FB2D /* 030-cake.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF295822143ADB00B6FB2D /* 030-cake.png */; };
+		F3FF298122143ADD00B6FB2D /* 014-love-birds.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF295922143ADB00B6FB2D /* 014-love-birds.png */; };
+		F3FF298222143ADD00B6FB2D /* 019-wine.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF295A22143ADB00B6FB2D /* 019-wine.png */; };
+		F3FF298322143ADD00B6FB2D /* 031-love-potion.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF295B22143ADB00B6FB2D /* 031-love-potion.png */; };
+		F3FF298422143ADD00B6FB2D /* 036-heart.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF295C22143ADB00B6FB2D /* 036-heart.png */; };
+		F3FF298522143ADD00B6FB2D /* 018-rose.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF295D22143ADB00B6FB2D /* 018-rose.png */; };
+		F3FF298622143ADD00B6FB2D /* 009-teddy-bear.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF295E22143ADC00B6FB2D /* 009-teddy-bear.png */; };
+		F3FF298722143ADD00B6FB2D /* 007-chocolate-box.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF295F22143ADC00B6FB2D /* 007-chocolate-box.png */; };
+		F3FF298922143ADD00B6FB2D /* 015-key.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF296122143ADC00B6FB2D /* 015-key.png */; };
+		F3FF298A22143ADD00B6FB2D /* 016-smartphone.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF296222143ADC00B6FB2D /* 016-smartphone.png */; };
+		F3FF298B22143ADD00B6FB2D /* 002-love-letter.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF296322143ADC00B6FB2D /* 002-love-letter.png */; };
+		F3FF298D22143ADD00B6FB2D /* 020-balloon.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF296522143ADC00B6FB2D /* 020-balloon.png */; };
+		F3FF298F22143ADD00B6FB2D /* 004-gift.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF296722143ADC00B6FB2D /* 004-gift.png */; };
+		F3FF299022143ADD00B6FB2D /* 026-bed.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF296822143ADC00B6FB2D /* 026-bed.png */; };
+		F3FF299122143ADD00B6FB2D /* 038-photo-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF296922143ADC00B6FB2D /* 038-photo-camera.png */; };
+		F3FF299222143ADD00B6FB2D /* 005-love-letter.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF296A22143ADC00B6FB2D /* 005-love-letter.png */; };
+		F3FF299322143ADD00B6FB2D /* 039-target.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF296B22143ADC00B6FB2D /* 039-target.png */; };
+		F3FF299422143ADD00B6FB2D /* 027-monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF296C22143ADC00B6FB2D /* 027-monitor.png */; };
+		F3FF299722143ADD00B6FB2D /* 011-heart-lock.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF296F22143ADD00B6FB2D /* 011-heart-lock.png */; };
+		F3FF299822143ADD00B6FB2D /* 006-cupid.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF297022143ADD00B6FB2D /* 006-cupid.png */; };
+		F3FF299B22143ADD00B6FB2D /* 040-proposal.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF297322143ADD00B6FB2D /* 040-proposal.png */; };
+		F3FF299C22143ADD00B6FB2D /* 017-strawberry.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF297422143ADD00B6FB2D /* 017-strawberry.png */; };
+		F3FF299F22143ADD00B6FB2D /* 033-dinner.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF297722143ADD00B6FB2D /* 033-dinner.png */; };
+		F3FF29A022143ADD00B6FB2D /* 010-light-bulb.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF297822143ADD00B6FB2D /* 010-light-bulb.png */; };
+		F3FF29A122143ADD00B6FB2D /* 028-laptop.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF297922143ADD00B6FB2D /* 028-laptop.png */; };
+		F3FF29A222143ADD00B6FB2D /* 013-mailbox.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF297A22143ADD00B6FB2D /* 013-mailbox.png */; };
+		F3FF29A422143B7900B6FB2D /* logo3.png in Resources */ = {isa = PBXBuildFile; fileRef = F3FF29A322143B7800B6FB2D /* logo3.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F327355C2213EF760037918E /* StickerPackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerPackTableViewCell.swift; sourceTree = "<group>"; };
+		F327355D2213EF760037918E /* StickerPackTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StickerPackTableViewCell.xib; sourceTree = "<group>"; };
+		F32735602213F44A0037918E /* StickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerCell.swift; sourceTree = "<group>"; };
+		F32735622213F7220037918E /* UIAlertController+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Additions.swift"; sourceTree = "<group>"; };
+		F3D9189E2212EBB000C74611 /* WA.Stickr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WA.Stickr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3D918A12212EBB000C74611 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3D918A32212EBB000C74611 /* StickerPacksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerPacksViewController.swift; sourceTree = "<group>"; };
+		F3D918A62212EBB000C74611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3D918A82212EBB700C74611 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3D918AB2212EBB700C74611 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3D918AD2212EBB700C74611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D918B42212EE3500C74611 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F3D918B62212EE4100C74611 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F3D918B82212EE5200C74611 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F3D918BA2212EE5900C74611 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		F3D918BC2212EE6000C74611 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		F3D918BE2212EE6A00C74611 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		F3D918C02212EE7700C74611 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F3D918C42212EECE00C74611 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F3D918C82212EF6400C74611 /* WA.Stickr-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WA.Stickr-Bridging-Header.h"; sourceTree = "<group>"; };
+		F3D918C92212EF6500C74611 /* YYImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImage.h; sourceTree = "<group>"; };
+		F3D918CA2212EF6500C74611 /* YYFrameImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFrameImage.m; sourceTree = "<group>"; };
+		F3D918CB2212EF6500C74611 /* YYAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYAnimatedImageView.h; sourceTree = "<group>"; };
+		F3D918CC2212EF6500C74611 /* YYFrameImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFrameImage.h; sourceTree = "<group>"; };
+		F3D918CD2212EF6500C74611 /* YYImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImage.m; sourceTree = "<group>"; };
+		F3D918CE2212EF6500C74611 /* YYSpriteSheetImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYSpriteSheetImage.m; sourceTree = "<group>"; };
+		F3D918CF2212EF6500C74611 /* YYAnimatedImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYAnimatedImageView.m; sourceTree = "<group>"; };
+		F3D918D02212EF6500C74611 /* YYImageCoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYImageCoder.h; sourceTree = "<group>"; };
+		F3D918D12212EF6500C74611 /* YYImageCoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYImageCoder.m; sourceTree = "<group>"; };
+		F3D918D22212EF6500C74611 /* YYSpriteSheetImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYSpriteSheetImage.h; sourceTree = "<group>"; };
+		F3D91A172212F4B500C74611 /* sticker_packs.wasticker */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sticker_packs.wasticker; sourceTree = "<group>"; };
+		F3D91A192212FC0C00C74611 /* Sticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
+		F3D91A1A2212FC0C00C74611 /* StickerPack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerPack.swift; sourceTree = "<group>"; };
+		F3D91A1B2212FC0C00C74611 /* WebPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPManager.swift; sourceTree = "<group>"; };
+		F3D91A1C2212FC0C00C74611 /* Interoperability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interoperability.swift; sourceTree = "<group>"; };
+		F3D91A1D2212FC0C00C74611 /* StickerPackManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StickerPackManager.swift; sourceTree = "<group>"; };
+		F3D91A1E2212FC0C00C74611 /* ImageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		F3D91A1F2212FC0C00C74611 /* Limits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Limits.swift; sourceTree = "<group>"; };
+		F3FF292222141D9B00B6FB2D /* Sticker5.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = Sticker5.png; sourceTree = "<group>"; };
+		F3FF292322141D9B00B6FB2D /* Sticker7.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = Sticker7.png; sourceTree = "<group>"; };
+		F3FF292422141D9B00B6FB2D /* 005.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = 005.png; sourceTree = "<group>"; };
+		F3FF292522141D9B00B6FB2D /* Sticker8.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = Sticker8.png; sourceTree = "<group>"; };
+		F3FF292622141D9B00B6FB2D /* 010.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = 010.png; sourceTree = "<group>"; };
+		F3FF292722141D9B00B6FB2D /* 007.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = 007.png; sourceTree = "<group>"; };
+		F3FF292822141D9B00B6FB2D /* 006.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = 006.png; sourceTree = "<group>"; };
+		F3FF292922141D9B00B6FB2D /* logo2.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = logo2.png; sourceTree = "<group>"; };
+		F3FF292A22141D9B00B6FB2D /* 002.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = 002.png; sourceTree = "<group>"; };
+		F3FF292B22141D9B00B6FB2D /* Sticker3.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = Sticker3.png; sourceTree = "<group>"; };
+		F3FF292C22141D9B00B6FB2D /* 008.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = 008.png; sourceTree = "<group>"; };
+		F3FF292D22141D9B00B6FB2D /* 011.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = 011.png; sourceTree = "<group>"; };
+		F3FF292E22141D9B00B6FB2D /* 004.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = 004.png; sourceTree = "<group>"; };
+		F3FF292F22141D9B00B6FB2D /* logo.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = logo.png; sourceTree = "<group>"; };
+		F3FF293022141D9B00B6FB2D /* 001.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = 001.png; sourceTree = "<group>"; };
+		F3FF293122141D9B00B6FB2D /* 009.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = 009.png; sourceTree = "<group>"; };
+		F3FF293222141D9C00B6FB2D /* Sticker1.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = Sticker1.png; sourceTree = "<group>"; };
+		F3FF293322141D9C00B6FB2D /* Sticker2.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = Sticker2.png; sourceTree = "<group>"; };
+		F3FF293422141D9C00B6FB2D /* 013.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = 013.png; sourceTree = "<group>"; };
+		F3FF293522141D9C00B6FB2D /* Sticker4.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = Sticker4.png; sourceTree = "<group>"; };
+		F3FF293622141D9C00B6FB2D /* Sticker6.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = Sticker6.png; sourceTree = "<group>"; };
+		F3FF293722141D9C00B6FB2D /* 003.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = 003.png; sourceTree = "<group>"; };
+		F3FF293822141D9C00B6FB2D /* 012.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = 012.png; sourceTree = "<group>"; };
+		F3FF2951221432AD00B6FB2D /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
+		F3FF295322143ADB00B6FB2D /* 012-tickets.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "012-tickets.png"; sourceTree = "<group>"; };
+		F3FF295522143ADB00B6FB2D /* 022-bouquet.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "022-bouquet.png"; sourceTree = "<group>"; };
+		F3FF295622143ADB00B6FB2D /* 025-book.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "025-book.png"; sourceTree = "<group>"; };
+		F3FF295722143ADB00B6FB2D /* 008-valentines-day.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "008-valentines-day.png"; sourceTree = "<group>"; };
+		F3FF295822143ADB00B6FB2D /* 030-cake.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "030-cake.png"; sourceTree = "<group>"; };
+		F3FF295922143ADB00B6FB2D /* 014-love-birds.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "014-love-birds.png"; sourceTree = "<group>"; };
+		F3FF295A22143ADB00B6FB2D /* 019-wine.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "019-wine.png"; sourceTree = "<group>"; };
+		F3FF295B22143ADB00B6FB2D /* 031-love-potion.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "031-love-potion.png"; sourceTree = "<group>"; };
+		F3FF295C22143ADB00B6FB2D /* 036-heart.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "036-heart.png"; sourceTree = "<group>"; };
+		F3FF295D22143ADB00B6FB2D /* 018-rose.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "018-rose.png"; sourceTree = "<group>"; };
+		F3FF295E22143ADC00B6FB2D /* 009-teddy-bear.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "009-teddy-bear.png"; sourceTree = "<group>"; };
+		F3FF295F22143ADC00B6FB2D /* 007-chocolate-box.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "007-chocolate-box.png"; sourceTree = "<group>"; };
+		F3FF296122143ADC00B6FB2D /* 015-key.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "015-key.png"; sourceTree = "<group>"; };
+		F3FF296222143ADC00B6FB2D /* 016-smartphone.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "016-smartphone.png"; sourceTree = "<group>"; };
+		F3FF296322143ADC00B6FB2D /* 002-love-letter.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "002-love-letter.png"; sourceTree = "<group>"; };
+		F3FF296522143ADC00B6FB2D /* 020-balloon.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "020-balloon.png"; sourceTree = "<group>"; };
+		F3FF296722143ADC00B6FB2D /* 004-gift.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "004-gift.png"; sourceTree = "<group>"; };
+		F3FF296822143ADC00B6FB2D /* 026-bed.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "026-bed.png"; sourceTree = "<group>"; };
+		F3FF296922143ADC00B6FB2D /* 038-photo-camera.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "038-photo-camera.png"; sourceTree = "<group>"; };
+		F3FF296A22143ADC00B6FB2D /* 005-love-letter.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "005-love-letter.png"; sourceTree = "<group>"; };
+		F3FF296B22143ADC00B6FB2D /* 039-target.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "039-target.png"; sourceTree = "<group>"; };
+		F3FF296C22143ADC00B6FB2D /* 027-monitor.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "027-monitor.png"; sourceTree = "<group>"; };
+		F3FF296F22143ADD00B6FB2D /* 011-heart-lock.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "011-heart-lock.png"; sourceTree = "<group>"; };
+		F3FF297022143ADD00B6FB2D /* 006-cupid.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "006-cupid.png"; sourceTree = "<group>"; };
+		F3FF297322143ADD00B6FB2D /* 040-proposal.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "040-proposal.png"; sourceTree = "<group>"; };
+		F3FF297422143ADD00B6FB2D /* 017-strawberry.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "017-strawberry.png"; sourceTree = "<group>"; };
+		F3FF297722143ADD00B6FB2D /* 033-dinner.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "033-dinner.png"; sourceTree = "<group>"; };
+		F3FF297822143ADD00B6FB2D /* 010-light-bulb.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "010-light-bulb.png"; sourceTree = "<group>"; };
+		F3FF297922143ADD00B6FB2D /* 028-laptop.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "028-laptop.png"; sourceTree = "<group>"; };
+		F3FF297A22143ADD00B6FB2D /* 013-mailbox.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = "013-mailbox.png"; sourceTree = "<group>"; };
+		F3FF29A322143B7800B6FB2D /* logo3.png */ = {isa = PBXFileReference; explicitFileType = compiled; path = logo3.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3D9189B2212EBB000C74611 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FF2952221432AD00B6FB2D /* WebP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3D918952212EBAF00C74611 = {
+			isa = PBXGroup;
+			children = (
+				F3D918A02212EBB000C74611 /* WA.Stickr */,
+				F3D9189F2212EBB000C74611 /* Products */,
+				F3D918B32212EE3500C74611 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3D9189F2212EBB000C74611 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3D9189E2212EBB000C74611 /* WA.Stickr.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3D918A02212EBB000C74611 /* WA.Stickr */ = {
+			isa = PBXGroup;
+			children = (
+				F3D918A12212EBB000C74611 /* AppDelegate.swift */,
+				F3D918A32212EBB000C74611 /* StickerPacksViewController.swift */,
+				F327355C2213EF760037918E /* StickerPackTableViewCell.swift */,
+				F327355D2213EF760037918E /* StickerPackTableViewCell.xib */,
+				F3D918A52212EBB000C74611 /* Main.storyboard */,
+				F3D918A82212EBB700C74611 /* Assets.xcassets */,
+				F3D918AA2212EBB700C74611 /* LaunchScreen.storyboard */,
+				F3D918AD2212EBB700C74611 /* Info.plist */,
+				F3D91A172212F4B500C74611 /* sticker_packs.wasticker */,
+				F3D91A272212FC3C00C74611 /* WAStickerLib */,
+				F3D919B02212F3D900C74611 /* SampleStickers */,
+				F3D918D82212EF8300C74611 /* WebP */,
+				F3D918C82212EF6400C74611 /* WA.Stickr-Bridging-Header.h */,
+			);
+			path = WA.Stickr;
+			sourceTree = "<group>";
+		};
+		F3D918B32212EE3500C74611 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3D918C42212EECE00C74611 /* libz.tbd */,
+				F3FF2951221432AD00B6FB2D /* WebP.framework */,
+				F3D918C02212EE7700C74611 /* MobileCoreServices.framework */,
+				F3D918BE2212EE6A00C74611 /* Accelerate.framework */,
+				F3D918BC2212EE6000C74611 /* ImageIO.framework */,
+				F3D918BA2212EE5900C74611 /* AssetsLibrary.framework */,
+				F3D918B82212EE5200C74611 /* QuartzCore.framework */,
+				F3D918B62212EE4100C74611 /* CoreFoundation.framework */,
+				F3D918B42212EE3500C74611 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3D918D82212EF8300C74611 /* WebP */ = {
+			isa = PBXGroup;
+			children = (
+				F3D918CB2212EF6500C74611 /* YYAnimatedImageView.h */,
+				F3D918CF2212EF6500C74611 /* YYAnimatedImageView.m */,
+				F3D918CC2212EF6500C74611 /* YYFrameImage.h */,
+				F3D918CA2212EF6500C74611 /* YYFrameImage.m */,
+				F3D918C92212EF6500C74611 /* YYImage.h */,
+				F3D918CD2212EF6500C74611 /* YYImage.m */,
+				F3D918D02212EF6500C74611 /* YYImageCoder.h */,
+				F3D918D12212EF6500C74611 /* YYImageCoder.m */,
+				F3D918D22212EF6500C74611 /* YYSpriteSheetImage.h */,
+				F3D918CE2212EF6500C74611 /* YYSpriteSheetImage.m */,
+			);
+			path = WebP;
+			sourceTree = "<group>";
+		};
+		F3D919B02212F3D900C74611 /* SampleStickers */ = {
+			isa = PBXGroup;
+			children = (
+				F3FF293022141D9B00B6FB2D /* 001.png */,
+				F3FF292A22141D9B00B6FB2D /* 002.png */,
+				F3FF293722141D9C00B6FB2D /* 003.png */,
+				F3FF292E22141D9B00B6FB2D /* 004.png */,
+				F3FF292422141D9B00B6FB2D /* 005.png */,
+				F3FF292822141D9B00B6FB2D /* 006.png */,
+				F3FF292722141D9B00B6FB2D /* 007.png */,
+				F3FF292C22141D9B00B6FB2D /* 008.png */,
+				F3FF293122141D9B00B6FB2D /* 009.png */,
+				F3FF292622141D9B00B6FB2D /* 010.png */,
+				F3FF292D22141D9B00B6FB2D /* 011.png */,
+				F3FF293822141D9C00B6FB2D /* 012.png */,
+				F3FF293422141D9C00B6FB2D /* 013.png */,
+				F3FF292F22141D9B00B6FB2D /* logo.png */,
+				F3FF292922141D9B00B6FB2D /* logo2.png */,
+				F3FF293222141D9C00B6FB2D /* Sticker1.png */,
+				F3FF293322141D9C00B6FB2D /* Sticker2.png */,
+				F3FF292B22141D9B00B6FB2D /* Sticker3.png */,
+				F3FF293522141D9C00B6FB2D /* Sticker4.png */,
+				F3FF292222141D9B00B6FB2D /* Sticker5.png */,
+				F3FF293622141D9C00B6FB2D /* Sticker6.png */,
+				F3FF292322141D9B00B6FB2D /* Sticker7.png */,
+				F3FF292522141D9B00B6FB2D /* Sticker8.png */,
+				F3FF29A322143B7800B6FB2D /* logo3.png */,
+				F3FF296322143ADC00B6FB2D /* 002-love-letter.png */,
+				F3FF296722143ADC00B6FB2D /* 004-gift.png */,
+				F3FF296A22143ADC00B6FB2D /* 005-love-letter.png */,
+				F3FF297022143ADD00B6FB2D /* 006-cupid.png */,
+				F3FF295F22143ADC00B6FB2D /* 007-chocolate-box.png */,
+				F3FF295722143ADB00B6FB2D /* 008-valentines-day.png */,
+				F3FF295E22143ADC00B6FB2D /* 009-teddy-bear.png */,
+				F3FF297822143ADD00B6FB2D /* 010-light-bulb.png */,
+				F3FF296F22143ADD00B6FB2D /* 011-heart-lock.png */,
+				F3FF295322143ADB00B6FB2D /* 012-tickets.png */,
+				F3FF297A22143ADD00B6FB2D /* 013-mailbox.png */,
+				F3FF295922143ADB00B6FB2D /* 014-love-birds.png */,
+				F3FF296122143ADC00B6FB2D /* 015-key.png */,
+				F3FF296222143ADC00B6FB2D /* 016-smartphone.png */,
+				F3FF297422143ADD00B6FB2D /* 017-strawberry.png */,
+				F3FF295D22143ADB00B6FB2D /* 018-rose.png */,
+				F3FF295A22143ADB00B6FB2D /* 019-wine.png */,
+				F3FF296522143ADC00B6FB2D /* 020-balloon.png */,
+				F3FF295522143ADB00B6FB2D /* 022-bouquet.png */,
+				F3FF295622143ADB00B6FB2D /* 025-book.png */,
+				F3FF296822143ADC00B6FB2D /* 026-bed.png */,
+				F3FF296C22143ADC00B6FB2D /* 027-monitor.png */,
+				F3FF297922143ADD00B6FB2D /* 028-laptop.png */,
+				F3FF295822143ADB00B6FB2D /* 030-cake.png */,
+				F3FF295B22143ADB00B6FB2D /* 031-love-potion.png */,
+				F3FF297722143ADD00B6FB2D /* 033-dinner.png */,
+				F3FF295C22143ADB00B6FB2D /* 036-heart.png */,
+				F3FF296922143ADC00B6FB2D /* 038-photo-camera.png */,
+				F3FF296B22143ADC00B6FB2D /* 039-target.png */,
+				F3FF297322143ADD00B6FB2D /* 040-proposal.png */,
+			);
+			path = SampleStickers;
+			sourceTree = "<group>";
+		};
+		F3D91A272212FC3C00C74611 /* WAStickerLib */ = {
+			isa = PBXGroup;
+			children = (
+				F3D91A1E2212FC0C00C74611 /* ImageData.swift */,
+				F3D91A1C2212FC0C00C74611 /* Interoperability.swift */,
+				F3D91A1F2212FC0C00C74611 /* Limits.swift */,
+				F3D91A192212FC0C00C74611 /* Sticker.swift */,
+				F3D91A1A2212FC0C00C74611 /* StickerPack.swift */,
+				F3D91A1D2212FC0C00C74611 /* StickerPackManager.swift */,
+				F3D91A1B2212FC0C00C74611 /* WebPManager.swift */,
+				F32735602213F44A0037918E /* StickerCell.swift */,
+				F32735622213F7220037918E /* UIAlertController+Additions.swift */,
+			);
+			path = WAStickerLib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3D9189D2212EBB000C74611 /* WA.Stickr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3D918B02212EBB700C74611 /* Build configuration list for PBXNativeTarget "WA.Stickr" */;
+			buildPhases = (
+				F3D9189A2212EBB000C74611 /* Sources */,
+				F3D9189B2212EBB000C74611 /* Frameworks */,
+				F3D9189C2212EBB000C74611 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WA.Stickr;
+			productName = WA.Stickr;
+			productReference = F3D9189E2212EBB000C74611 /* WA.Stickr.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3D918962212EBB000C74611 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Netbiz.in;
+				TargetAttributes = {
+					F3D9189D2212EBB000C74611 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
+				};
+			};
+			buildConfigurationList = F3D918992212EBB000C74611 /* Build configuration list for PBXProject "WA.Stickr" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3D918952212EBAF00C74611;
+			productRefGroup = F3D9189F2212EBB000C74611 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3D9189D2212EBB000C74611 /* WA.Stickr */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3D9189C2212EBB000C74611 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D918AC2212EBB700C74611 /* LaunchScreen.storyboard in Resources */,
+				F3FF293D22141D9C00B6FB2D /* 010.png in Resources */,
+				F3FF294422141D9C00B6FB2D /* 011.png in Resources */,
+				F3FF29A222143ADD00B6FB2D /* 013-mailbox.png in Resources */,
+				F3FF298122143ADD00B6FB2D /* 014-love-birds.png in Resources */,
+				F3FF297B22143ADD00B6FB2D /* 012-tickets.png in Resources */,
+				F3FF298922143ADD00B6FB2D /* 015-key.png in Resources */,
+				F3FF298522143ADD00B6FB2D /* 018-rose.png in Resources */,
+				F3FF298B22143ADD00B6FB2D /* 002-love-letter.png in Resources */,
+				F3FF294722141D9C00B6FB2D /* 001.png in Resources */,
+				F3FF298F22143ADD00B6FB2D /* 004-gift.png in Resources */,
+				F3FF294C22141D9C00B6FB2D /* Sticker4.png in Resources */,
+				F3FF29A022143ADD00B6FB2D /* 010-light-bulb.png in Resources */,
+				F3FF299722143ADD00B6FB2D /* 011-heart-lock.png in Resources */,
+				F3FF299122143ADD00B6FB2D /* 038-photo-camera.png in Resources */,
+				F3D91A182212F4B500C74611 /* sticker_packs.wasticker in Resources */,
+				F327355F2213EF760037918E /* StickerPackTableViewCell.xib in Resources */,
+				F3FF294322141D9C00B6FB2D /* 008.png in Resources */,
+				F3FF29A422143B7900B6FB2D /* logo3.png in Resources */,
+				F3FF293F22141D9C00B6FB2D /* 006.png in Resources */,
+				F3FF29A122143ADD00B6FB2D /* 028-laptop.png in Resources */,
+				F3FF299022143ADD00B6FB2D /* 026-bed.png in Resources */,
+				F3FF298A22143ADD00B6FB2D /* 016-smartphone.png in Resources */,
+				F3FF293922141D9C00B6FB2D /* Sticker5.png in Resources */,
+				F3FF298422143ADD00B6FB2D /* 036-heart.png in Resources */,
+				F3FF293A22141D9C00B6FB2D /* Sticker7.png in Resources */,
+				F3FF294822141D9C00B6FB2D /* 009.png in Resources */,
+				F3FF294D22141D9C00B6FB2D /* Sticker6.png in Resources */,
+				F3FF297E22143ADD00B6FB2D /* 025-book.png in Resources */,
+				F3FF294022141D9C00B6FB2D /* logo2.png in Resources */,
+				F3FF299C22143ADD00B6FB2D /* 017-strawberry.png in Resources */,
+				F3FF294A22141D9C00B6FB2D /* Sticker2.png in Resources */,
+				F3FF298D22143ADD00B6FB2D /* 020-balloon.png in Resources */,
+				F3FF294F22141D9C00B6FB2D /* 012.png in Resources */,
+				F3FF297D22143ADD00B6FB2D /* 022-bouquet.png in Resources */,
+				F3FF297F22143ADD00B6FB2D /* 008-valentines-day.png in Resources */,
+				F3FF299F22143ADD00B6FB2D /* 033-dinner.png in Resources */,
+				F3FF294522141D9C00B6FB2D /* 004.png in Resources */,
+				F3D918A92212EBB700C74611 /* Assets.xcassets in Resources */,
+				F3FF294E22141D9C00B6FB2D /* 003.png in Resources */,
+				F3FF294622141D9C00B6FB2D /* logo.png in Resources */,
+				F3FF298622143ADD00B6FB2D /* 009-teddy-bear.png in Resources */,
+				F3FF294922141D9C00B6FB2D /* Sticker1.png in Resources */,
+				F3FF298722143ADD00B6FB2D /* 007-chocolate-box.png in Resources */,
+				F3FF294222141D9C00B6FB2D /* Sticker3.png in Resources */,
+				F3FF293C22141D9C00B6FB2D /* Sticker8.png in Resources */,
+				F3FF299422143ADD00B6FB2D /* 027-monitor.png in Resources */,
+				F3FF299322143ADD00B6FB2D /* 039-target.png in Resources */,
+				F3FF298222143ADD00B6FB2D /* 019-wine.png in Resources */,
+				F3FF293E22141D9C00B6FB2D /* 007.png in Resources */,
+				F3FF299222143ADD00B6FB2D /* 005-love-letter.png in Resources */,
+				F3FF293B22141D9C00B6FB2D /* 005.png in Resources */,
+				F3FF299822143ADD00B6FB2D /* 006-cupid.png in Resources */,
+				F3FF294B22141D9C00B6FB2D /* 013.png in Resources */,
+				F3FF294122141D9C00B6FB2D /* 002.png in Resources */,
+				F3D918A72212EBB000C74611 /* Main.storyboard in Resources */,
+				F3FF299B22143ADD00B6FB2D /* 040-proposal.png in Resources */,
+				F3FF298022143ADD00B6FB2D /* 030-cake.png in Resources */,
+				F3FF298322143ADD00B6FB2D /* 031-love-potion.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3D9189A2212EBB000C74611 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D91A232212FC0D00C74611 /* Interoperability.swift in Sources */,
+				F32735612213F44B0037918E /* StickerCell.swift in Sources */,
+				F3D918D32212EF6500C74611 /* YYFrameImage.m in Sources */,
+				F3D91A252212FC0D00C74611 /* ImageData.swift in Sources */,
+				F3D91A262212FC0D00C74611 /* Limits.swift in Sources */,
+				F3D918D42212EF6500C74611 /* YYImage.m in Sources */,
+				F3D918A42212EBB000C74611 /* StickerPacksViewController.swift in Sources */,
+				F3D91A212212FC0D00C74611 /* StickerPack.swift in Sources */,
+				F3D918D62212EF6500C74611 /* YYAnimatedImageView.m in Sources */,
+				F3D918A22212EBB000C74611 /* AppDelegate.swift in Sources */,
+				F3D91A202212FC0D00C74611 /* Sticker.swift in Sources */,
+				F32735632213F7220037918E /* UIAlertController+Additions.swift in Sources */,
+				F3D91A222212FC0D00C74611 /* WebPManager.swift in Sources */,
+				F327355E2213EF760037918E /* StickerPackTableViewCell.swift in Sources */,
+				F3D918D72212EF6500C74611 /* YYImageCoder.m in Sources */,
+				F3D91A242212FC0D00C74611 /* StickerPackManager.swift in Sources */,
+				F3D918D52212EF6500C74611 /* YYSpriteSheetImage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F3D918A52212EBB000C74611 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3D918A62212EBB000C74611 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3D918AA2212EBB700C74611 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3D918AB2212EBB700C74611 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3D918AE2212EBB700C74611 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3D918AF2212EBB700C74611 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3D918B12212EBB700C74611 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QK5Z88ACCR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = WA.Stickr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "in.NetBiz.WA-Stickr";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WA.Stickr/WA.Stickr-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3D918B22212EBB700C74611 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QK5Z88ACCR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = WA.Stickr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "in.NetBiz.WA-Stickr";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WA.Stickr/WA.Stickr-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3D918992212EBB000C74611 /* Build configuration list for PBXProject "WA.Stickr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3D918AE2212EBB700C74611 /* Debug */,
+				F3D918AF2212EBB700C74611 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3D918B02212EBB700C74611 /* Build configuration list for PBXNativeTarget "WA.Stickr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3D918B12212EBB700C74611 /* Debug */,
+				F3D918B22212EBB700C74611 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3D918962212EBB000C74611 /* Project object */;
+}
